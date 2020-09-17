@@ -1,6 +1,7 @@
 
 import megacalss.SuperClass;
 import parsers.*;
+import parsers.another.CalculatorClass;
 import parsers.another.Cars;
 import parsers.another.Services;
 import parsers.another.Wheels;
@@ -8,6 +9,10 @@ import writers.ToExcelWriter;
 
 public class MainClass {
     public static void main(String[] args) throws Exception {
+
+        CalculatorClass calculatorClass = new CalculatorClass();
+        calculatorClass.getServiceByUnit();
+
 
         Wheels wheels = new Wheels();
         wheels.getWheelsCarAlloy();
@@ -54,7 +59,11 @@ public class MainClass {
         superClass.turbo();
 
 
+//------------------------------------------------------
+//------------------------------------------------------
+//------------------------------------------------------
 
+//
 //        ToExcelWriter toExcelWriter = new ToExcelWriter();
 //        toExcelWriter.WriteToExcel();
 
