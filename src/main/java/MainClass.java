@@ -10,8 +10,6 @@ import writers.ToExcelWriter;
 public class MainClass {
     public static void main(String[] args) throws Exception {
 
-        CalculatorClass calculatorClass = new CalculatorClass();
-        calculatorClass.getServiceByUnit();
 
 
         Wheels wheels = new Wheels();
@@ -57,6 +55,12 @@ public class MainClass {
         superClass.techObs();
         superClass.transmission();
         superClass.turbo();
+
+
+        CalculatorClass calculatorClass = new CalculatorClass();
+        calculatorClass.getServiceByUnit();
+//        calculatorClass.getServiceByUnitSecondTry();
+
 
 
 //------------------------------------------------------
